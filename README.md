@@ -33,6 +33,12 @@ sudo pacman -S p7zip furmark-bin nvidia-utils lm_sensors
 
 ## 🚀 Использование
 
+0. **Быстрый старт**
+    ```bash
+    git clone https://github.com/tisomeke/linux-stress-test
+    cd linux-stress-test
+    ```
+
 1.  **Дайте права на исполнение:**
     ```bash
     chmod +x stress.sh
