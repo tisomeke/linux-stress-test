@@ -17,7 +17,7 @@ MODE=$1
 
 [ -z "$MODE" ] && { echo "Ошибка: укажите режим (cpu, gpu или all)"; exit 1; }
 
-LOG_FILE="stress_${MODE}_$(date +%Y%m%d_%H%M%S).log"
+LOG_FILE="logs/stress_${MODE}_$(date +%Y%m%d_%H%M%S).log"
 
 # --- ДИНАМИЧЕСКИЙ ПОИСК ПУТЕЙ (AMD) ---
 # Ищем активную видеокарту в системе
