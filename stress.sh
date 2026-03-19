@@ -1,8 +1,11 @@
 #!/bin/bash
 
+# Создание директории для логов
+mkdir -p logs
+
 # Настройки
 DURATION=300 # 5 минут
-LOG_FILE="stress_$(date +%H%M%S).log"
+LOG_FILE="logs/stress_$(date +%H%M%S).log"
 
 # --- ФУНКЦИИ СБОРА ДАННЫХ ---
 
