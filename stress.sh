@@ -1,5 +1,7 @@
 #!/bin/bash
 
+mkdir -p logs
+
 # --- НАСТРОЙКИ ПО УМОЛЧАНИЮ ---
 DURATION=300
 MODE=""
@@ -20,7 +22,7 @@ if [[ -z "$MODE" ]]; then
     exit 1
 fi
 
-LOG_FILE="stress_${MODE}_$(date +%Y%m%d_%H%M%S).log"
+LOG_FILE="logs/stress_${MODE}_$(date +%Y%m%d_%H%M%S).log"
 
 # --- ФУНКЦИИ СБОРА ИНФОРМАЦИИ ---
 
